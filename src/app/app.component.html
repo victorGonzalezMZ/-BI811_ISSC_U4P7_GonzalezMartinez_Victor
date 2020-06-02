@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"> Inteligencia de Negocios - Dashboard - Víctor Emmanuel González Martínez </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+
+<div class="row mt-3 mb-3 ml-5 mr-5">
+  <input 
+    type="file" 
+    accept=".csv"
+    placeholder="Cargue un archivo .CSV"
+    (change)="uploadListener($event)" />
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="row">
+        <canvas id="pieChart" width="400" height="300"></canvas>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="row">
+        <canvas id="barChart" width="400" height="300"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<router-outlet></router-outlet>
